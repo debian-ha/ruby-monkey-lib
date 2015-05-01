@@ -1,0 +1,28 @@
+Source: ruby-monkey-lib
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Richard B Winters <rik@mmogp.com>
+Build-Depends: debhelper (>= 9),
+ gem2deb,
+ ruby-rspec,
+ rake
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-monkey-lib.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-monkey-lib.git;a=summary
+Homepage: http://github.com/rkh/monkey-lib
+Testsuite: autopkgtest
+XS-Ruby-Versions: all
+
+Package: ruby-monkey-lib
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ ruby | ruby-interpreter,
+ ruby-backports
+# backports (>= 0)
+Description: Making ruby extension frameworks pluggable
+ monkey-lib makes ruby extension libraries pluggable, and thus does not force
+ such a library on the users of your library - like BigBand - while still 
+ giving you some fancy features.
