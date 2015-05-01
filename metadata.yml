@@ -1,0 +1,146 @@
+--- !ruby/object:Gem::Specification 
+name: monkey-lib
+version: !ruby/object:Gem::Version 
+  hash: 3
+  prerelease: false
+  segments: 
+  - 0
+  - 5
+  - 4
+  version: 0.5.4
+platform: ruby
+authors: 
+- Konstantin Haase
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-09-20 00:00:00 +02:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: backports
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id001
+description: Making ruby extension frameworks pluggable.
+email: konstantin.mailinglists@googlemail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.rdoc
+- LICENSE
+- lib/monkey/autoloader.rb
+- lib/monkey/backend/active_support.rb
+- lib/monkey/backend/backports.rb
+- lib/monkey/backend/common/extract_options.rb
+- lib/monkey/backend/common/parent.rb
+- lib/monkey/backend/common/singleton_class.rb
+- lib/monkey/backend/common/tap.rb
+- lib/monkey/backend/extlib.rb
+- lib/monkey/backend/facets.rb
+- lib/monkey/backend.rb
+- lib/monkey/engine.rb
+- lib/monkey/ext/array.rb
+- lib/monkey/ext/enumerable.rb
+- lib/monkey/ext/file.rb
+- lib/monkey/ext/module.rb
+- lib/monkey/ext/object.rb
+- lib/monkey/ext/pathname.rb
+- lib/monkey/ext/string.rb
+- lib/monkey/ext/symbol.rb
+- lib/monkey/ext.rb
+- lib/monkey/hash_fix.rb
+- lib/monkey/matcher.rb
+- lib/monkey/version.rb
+- lib/monkey-lib.rb
+- lib/monkey.rb
+files: 
+- LICENSE
+- Rakefile
+- README.rdoc
+- lib/monkey/autoloader.rb
+- lib/monkey/backend/active_support.rb
+- lib/monkey/backend/backports.rb
+- lib/monkey/backend/common/extract_options.rb
+- lib/monkey/backend/common/parent.rb
+- lib/monkey/backend/common/singleton_class.rb
+- lib/monkey/backend/common/tap.rb
+- lib/monkey/backend/extlib.rb
+- lib/monkey/backend/facets.rb
+- lib/monkey/backend.rb
+- lib/monkey/engine.rb
+- lib/monkey/ext/array.rb
+- lib/monkey/ext/enumerable.rb
+- lib/monkey/ext/file.rb
+- lib/monkey/ext/module.rb
+- lib/monkey/ext/object.rb
+- lib/monkey/ext/pathname.rb
+- lib/monkey/ext/string.rb
+- lib/monkey/ext/symbol.rb
+- lib/monkey/ext.rb
+- lib/monkey/hash_fix.rb
+- lib/monkey/matcher.rb
+- lib/monkey/version.rb
+- lib/monkey-lib.rb
+- lib/monkey.rb
+- spec/monkey/backend_spec.rb
+- spec/monkey/engine_spec.rb
+- spec/monkey/ext/array_spec.rb
+- spec/monkey/ext/enumerable_spec.rb
+- spec/monkey/ext/module_spec.rb
+- spec/monkey/ext/object_spec.rb
+- spec/monkey/ext/pathname_spec.rb
+- spec/monkey/ext/string_spec.rb
+- spec/monkey/ext/symbol_spec.rb
+- spec/monkey/ext_spec.rb
+- spec/monkey/matcher_spec.rb
+- spec/monkey_spec.rb
+- spec/spec_helper.rb
+has_rdoc: true
+homepage: http://github.com/rkh/monkey-lib
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.7
+signing_key: 
+specification_version: 3
+summary: Making ruby extension frameworks pluggable.
+test_files: []
+
